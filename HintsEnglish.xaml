@@ -1,0 +1,202 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PodiumControl.Texts"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    x:Name="HintsEnglish">
+
+<!--Main Menu-->
+<system:String x:Key="HintRefreshDevices" xml:space="preserve">刷新设备</system:String>
+<system:String x:Key="HintViewAllGame" xml:space="preserve">查看所有游戏</system:String>
+<system:String x:Key="HintGameImage" xml:space="preserve">启动游戏</system:String>
+<system:String x:Key="HintNotSupported" xml:space="preserve">Telemetry support coming soon</system:String>
+<system:String x:Key="HintGameNotFound" xml:space="preserve">没有在steam中找到游戏或者游戏没有对应设置</system:String>
+
+<!--Tuning Menu-->
+<system:String x:Key="HintSetup" xml:space="preserve">设置菜单可以在base上保留5种不同的设置</system:String>
+<system:String x:Key="HintReset" xml:space="preserve">重置所有设置值</system:String>
+<system:String x:Key="HintSEN"   xml:space="preserve">[SEN] defines the maximum steering angle you can turn the wheel.Default is "Auto",
+then the game takes care of a realistic steering angle for each car.
+This can be adjusted for personal preference or some games that don't support "Auto"
+A lower value makes the steering more direct.</system:String>
+<system:String x:Key="HintFF" xml:space="preserve">[FF] adjusts the overall force feedback strength of all effects coming from a game equally.
+100% will use the full torque the Wheel Base can produce, 50% will only result in half of the torque the Base could output.
+Different kind of effects like Force, Spring or Damper can be adjusted separately below.</system:String>
+<system:String x:Key="HintSHO"   xml:space="preserve">[SHO] adjusts the vibration strength of the rumble motors placed inside of ClubSport steering wheels.
+Vibration effects can be output from the game or the FanaLab Software.
+This setting will not influence force feedback effects.</system:String>
+<system:String x:Key="HintABS"   xml:space="preserve">[ABS] adjusts the brake pedal threshold to trigger vibration,
+default is OFF which only allows games to control the vibration..
+If you set it to 100% the vibration will start when you press the pedal 100%.
+If you set it to 95% it will vibrate at 95% pressure and higher.
+This only works with ClubSport Pedals V3 and V3i that are connected to the Wheel Base.</system:String>
+<system:String x:Key="HintDRI"   xml:space="preserve">[DRI] adjusts the resistance of the wheel, default is the lowest value to prevent oscillations in less optimized games.
+For personal preference and a faster response the value can be raised to get less resistance.
+Try to find a good balance between low resistance for fast reaction time and enough resistance to keep the behavior stable.</system:String>
+<system:String x:Key="HintFOR"   xml:space="preserve">[FOR] adjusts the strength of Force Effects coming from a game, default is 100%. 
+Games use this effect to control most of the FFB. Some games only use Force Effects.
+100% will use the maximum torque selected by the overall strength [FF].
+50% will only use half of the torque selected by the overall strength [FF].</system:String>
+<system:String x:Key="HintSPR"   xml:space="preserve">[SPR] adjusts the strength of the Spring Effects coming from a game, default is 100%. 
+Sometimes used as a menu center spring or re-alignment force while driving.
+This is not a constant spring, it's only controlled by the game and will not result in any effect other than what the game outputs.
+100% will use the maximum torque selected by the overall strength [FF].
+50% will only use half of the torque selected by the overall strength [FF].</system:String>
+<system:String x:Key="HintDPR"   xml:space="preserve">[DPR] adjusts the strength of the Damper Effects coming from a game, default is 100%. 
+Sometimes used to dampen oscillations or simulating the tyre resistance when standing still and turning the wheel.
+This is not a constant damper, it's only controlled by the game and will not result in any effect other than what the game outputs.
+100% will use the maximum torque selected by the overall strength [FF].
+50% will only use half of the torque selected by the overall strength [FF].</system:String>
+<system:String x:Key="HintNDP"   xml:space="preserve">[NDP] adjusts a constant damper which is not influenced by the game, default is 50% to prevent oscillations.
+In comparison to Natural Friction the resistance of the damper increases with the steerings turning speed.
+At 100% the steering will have the most resistance and is very hard to turn.
+At 0% the steering wheel will have the least resistance, this can lead to oscillations and bad behaviour depending on the game
+and how strong the FFB is set to, use lower values with caution!
+Try to find a good balance between low resistance for fast reaction time and enough resistance to keep the behavior stable.
+Suggested values are between 10-50% depending on the FFB strength and behaviour.</system:String>
+
+<system:String x:Key="HintNFR"   xml:space="preserve">[NFR] adjusts a constant friction effect which is not influenced by a game, default is off.
+The setting can be used to prevent oscillations or simulate the steering rack of a car without power steering.
+In comparison to the Natural Damper, resistance of Friction acts more linear with different rotation speeds of the wheel.
+At 100% the steering will have the most resistance and is very hard to turn. 
+At 0% the steering wheel will have the least resistance.
+Try to find a good balance between low resistance for the most feel and enough resistance to keep the behavior stable.
+A good window is between 0-15% for this setting depending on the FFB strength and behaviour.</system:String>
+
+<system:String x:Key="HintFEI"   xml:space="preserve">[FEI] adjusts how intense or smooth the effects from a game will be.
+100% is the most sharp and direct setting but can be very harsh and result in rattling depending on the game.
+0% is very smooth with less rattle but subtle effects and feeling can get lost.
+Try to find a good balance between enough detailed FFB effects without resulting in noisy rattle.</system:String>
+<system:String x:Key="HintBRF"   xml:space="preserve">[BRF] adjusts the sensitivity of the brake pedal if supported pedals are connected to the Wheel Base.
+Default value is 50%, you can raise or lower the value for personal preference.
+100% means you have to press the brake pedal harder to get full brake input, more difficult to lock up the wheels while braking.
+0% means you have to press the brake pedal less hard to get full brake input, easier to lock up the wheels while braking.</system:String>
+<system:String x:Key="HintMPS"   xml:space="preserve">Select the mode of the Multi-Position-Switch of your steering wheel.</system:String>
+<system:String x:Key="HintMPSModeAuto"   xml:space="preserve">The MPS works by default in Encoder mode.
+Games which support the MPS natively can automatically switch the mode for full functionality.
+With this setting you have the best working mode automatically selected.</system:String>
+<system:String x:Key="HintMPSModeEncoder"   xml:space="preserve">The MPS works as a classic encoder with two inputs, one for turning left and one for turning right.
+This setting is for games that don't support the MPS natively and works with most of the games out of the box.</system:String>
+<system:String x:Key="HintMPSModeConstant"   xml:space="preserve">The MPS has 12 positions with unique inputs for each position, the input of the currently selected position is constantly send. 
+This needs to be supported by the game and can cause problems with games that don't feature the MPS this.
+Only use it for games you know that are supported.</system:String>
+<system:String x:Key="HintMPSModePulse"   xml:space="preserve">The MPS has 12 positions with unique inputs for each position, the input is only send as a pulse when changing the position. 
+This needs to be supported by the game to take full advantage. This setting can be used when CONST causes problems.
+Only select this when you want to use 12 different positions but CONST causes problems in the game.</system:String>
+<system:String x:Key="HintAPM"   xml:space="preserve">Select the mode of Advanced Paddle Module of your steering wheel.</system:String>
+<system:String x:Key="HintApCbp" xml:space="preserve">Left and right paddle work in parallel. The paddle that is pressed further is valid.
+Adjusting: Pull one paddle compeltely, then press D-Pad down until the car is rolling.
+Using: Pull both paddles, release one instantly at start, then let the second one go in a controlled way.</system:String>
+<system:String x:Key="HintApCh" xml:space="preserve">The left paddle will controll the clutch and the right paddle the handbrake.</system:String>
+<system:String x:Key="HintApBt" xml:space="preserve">The left paddle will controll the brake and the right paddle the throttle.</system:String>
+<system:String x:Key="HintApAna" xml:space="preserve">Both paddles are manually mappable, they share the Axes with the left analog stick of ClubSport steering wheels.
+This will overwrite mouse emulation if you are using it.</system:String>
+
+<!--Dynamic FFB-->
+<system:String x:Key="HintOscillation" xml:space="preserve">Apply a speed sensitive overlay damper effect to simulate the tires gyroscopic forces.
+This can give a more realistic feeling on straights as well as minimizing shaking and oscillations.</system:String>
+<system:String x:Key="HintSpeedThreshold0" >The speed where dampening overlay starts to take effect.</system:String>
+<system:String x:Key="HintWheelAngleThreshold" >​The range of wheel angle away from the center within the dampening overlay takes effect.</system:String>
+<system:String x:Key="HintOscDamperStrength">The maximum strength of the dampening overlay.</system:String>
+<system:String x:Key="HintFFBReverseDamper" xml:space="preserve">Apply an overlay damper effect when driving in reverse to minimize wheel shaking or oscillation.</system:String>
+<system:String x:Key="HintFFBReverseDamperStrength" xml:space="preserve">The maximum strength of the dampening overlay.</system:String>
+<system:String x:Key="HintFFBReverseDamperFadeInIntensity" xml:space="preserve">How quick the damper overlay to ramp up the strength.</system:String>
+
+<!--Vibration Steering Wheel-->
+<system:String x:Key="HintSW" xml:space="preserve">Vibration effects that can be used with the rumble motors of ClubSport steering wheels.</system:String>
+<system:String x:Key="HintSWABS" xml:space="preserve">Adjusts the strength of the vibration when the car's ABS is actively working.</system:String>
+<system:String x:Key="HintSWVibrationDuration1" xml:space="preserve">Adjusts the length of the vibration in milliseconds, default is 500ms.
+Shorter duration results in a more precise timing but a too short duration leads to missing vibration ques.
+Longer duration makes sure no ABS impulse is lost to trigger the vibration but a longer duration will delay the end of vibration.</system:String>
+<system:String x:Key="HintSWEngine" xml:space="preserve">Adjusts the maximum vibration strength at the maximum engine rpm. 
+The vibration increases with the engine rpm.</system:String>
+<system:String x:Key="HintSWInitialVibration" xml:space="preserve">Defines the minimum engine rpm the vibration starts in percent.
+For example if it's set to 50%, then with a car that has  a max rpm of 10.000,the vibration will start at 5.000rpm.</system:String>
+<system:String x:Key="HintSWRevLimiter" xml:space="preserve">Adjusts the vibration strength when the engine revs into the limiter.</system:String>
+<system:String x:Key="HintSWRevLimiterThreshold" xml:space="preserve">Adjusts the rev limiter threshold on when to trigger the vibration.</system:String>
+<system:String x:Key="HintSWSuspensionTravel" xml:space="preserve">Adjusts the vibration strength on road bumps and rough curbs or going off-road.</system:String>
+<system:String x:Key="HintSWSuspensionTravelThreshold" xml:space="preserve">Adjusts how much suspension travel is needed to be to trigger vibration.
+A lower values will result in vibration already an smaller suspension travel like curbs.
+A higher value will result in vibration only on bigger suspension travel like harsh bumps.</system:String>
+<system:String x:Key="HintSWTractionControl" xml:space="preserve">Adjusts the vibration strength when the car's traction control is actively working.</system:String>
+<system:String x:Key="HintSWVibrationDuration2" xml:space="preserve">Adjusts the length of the vibration in milliseconds, default is 500ms.
+Shorter duration results in a more precise timing but a too short duration leads to missing vibration ques.
+Longer duration makes sure no TC impulse is lost to trigger the vibration but a longer duration will delay the end of vibration.</system:String>
+<system:String x:Key="HintSWWheelLock" xml:space="preserve">Adjusts the vibration strength when a wheel locks up while the car is driving.</system:String>
+<system:String x:Key="HintSWWheelSpin" xml:space="preserve">Adjusts the vibration strength when a wheel turns faster then the car is driving.</system:String>
+<system:String x:Key="HintSWWheelSpinThreshold" xml:space="preserve">Adjusts how much wheel spin is needed to be to trigger vibration.</system:String>
+<system:String x:Key="HintSWUndersteer" xml:space="preserve">Adjusts the vibration strength when the car is understeering.</system:String>
+<system:String x:Key="HintSWFrictionLimitUndersteer" xml:space="preserve">Adjusts the friction limit angle of the front tyres. The car will start to lose grip or understeer after the front tyres slip angle is greater than the friction limit angle.</system:String>
+<system:String x:Key="HintSWOversteer" xml:space="preserve">Adjusts the vibration strength when the car is oversteering.</system:String>
+<system:String x:Key="HintSWFrictionLimitOversteer" xml:space="preserve">Adjusts the friction limit angle of the rear tyres. The car will start to lose grip or oversteer after the rear tyres slip angle is greater than the friction limit angle.</system:String>
+
+<!--Vibration Steering Brake-->
+<system:String x:Key="HintBr" xml:space="preserve">Vibration effects that can be used with ClubSport Pedals V3 and V3i.</system:String>
+<system:String x:Key="HintBrABS" xml:space="preserve">Enables vibration when the car's ABS is actively working.</system:String>
+<system:String x:Key="HintBrVibrationDuration" xml:space="preserve">"Adjusts the length of the vibration in milliseconds, default is 500ms.
+Shorter duration results in a more precise timing but a too short duration leads to missing vibration ques.
+Longer duration makes sure no ABS impulse is lost to trigger the vibration but a longer duration will delay the end of vibration."</system:String>
+<system:String x:Key="HintBrSuspensionTravel" xml:space="preserve">Enables vibration on road bumps and rough curbs or going off-road.</system:String>
+<system:String x:Key="HintBrWheelLock" xml:space="preserve">Enables vibration when a wheel locks up while the car is driving.</system:String>
+
+<!--Vibration Steering Throttle-->
+<system:String x:Key="HintTr" xml:space="preserve">Vibration effects that can be used with ClubSport Pedals V3 and V3i</system:String>
+<system:String x:Key="HintTrRevLimiter" xml:space="preserve">Enables vibration when the engine revs into the limiter.</system:String>
+<system:String x:Key="HintTrSuspensionTravel" xml:space="preserve">Enables vibration on road bumps and rough curbs or going off-road.</system:String>
+<system:String x:Key="HintTrWheelSpin" xml:space="preserve">Adjusts the vibration strength when a wheel turns faster then the car is driving.</system:String>
+
+<!--Three digit Led-->
+<system:String x:Key="HintSpeed" xml:space="preserve">Shows the speed of the car.</system:String>
+<system:String x:Key="HintRpm" xml:space="preserve">Shows how high the engine is reving right now.</system:String>
+<system:String x:Key="HintFuelLiter" xml:space="preserve">Shows the amount of fuel that is left in liters.</system:String>
+<system:String x:Key="HintGear" xml:space="preserve">Shows the gear the car is in.</system:String>
+<system:String x:Key="HintABS2" xml:space="preserve">Shows "AbS" on the display when ABS of the car is actively working.</system:String>
+<system:String x:Key="HintDrag" xml:space="preserve">Shows "DrS" on the display when the drag reduction system of the car is active.</system:String>
+<system:String x:Key="HintPitLane" xml:space="preserve">Shows "PIt" when car is inside the pit.</system:String>
+<system:String x:Key="HintTC" xml:space="preserve">Shows "TC" when the traction control of the car is actively working.</system:String>
+<system:String x:Key="HintLapNumber" xml:space="preserve">Shows the amount of laps driven in that session.</system:String>
+<system:String x:Key="HintPosition" xml:space="preserve">Shows the position in a race.</system:String>
+<system:String x:Key="HintSector" xml:space="preserve">Shows the sector number depending on where the car is on track</system:String>
+
+<!--Rev Led-->
+<system:String x:Key="HintPitLane1" xml:space="preserve">The chosen lights will flash when car is inside the pit.</system:String>
+<system:String x:Key="HintPitLimiter" xml:space="preserve">The chosen lights will flash when the pit limiter is reducing the speed.</system:String>
+<system:String x:Key="HintRevLedRpmPercentage" xml:space="preserve">Select at which percentage of RPM a specific LED should light up</system:String>
+<system:String x:Key="HintDefault" xml:space="preserve">Reset values to default</system:String>
+
+<!--Led Flags-->
+<system:String x:Key="HintPitLane2" xml:space="preserve">LEDs will light up in the selected colors if car is inside the pit.</system:String>
+<system:String x:Key="HintWheelSpin1" xml:space="preserve">LEDs will light up in the selected colors if wheelspin is detected when applying too much throttle.</system:String>
+<system:String x:Key="HintWheelLock1" xml:space="preserve">LEDs will light up in the selected colors if the wheels are locking up when braking too hard.</system:String>
+<system:String x:Key="HintPitLimiter1" xml:space="preserve">LEDs will light up in the selected colors if the pit limiter is reducing the speed.</system:String>
+
+<!--Game Profile-->
+<system:String x:Key="HintGameMismatch" xml:space="preserve">Active profile and running game doesn't match</system:String>
+<system:String x:Key="HintEnableTelemetry" xml:space="preserve">Enabling telemetry communication from the game to the FanaLab Software</system:String>
+<system:String x:Key="HintEnableHWSupport" xml:space="preserve">If you don't want to use the FanaLab Software.
+Enables the native support for Fanatec hardware of the selected game.</system:String>
+<system:String x:Key="HintDisableHWSupport" xml:space="preserve">Needs to be done for best functionality with the FanaLab Software.
+Disables the standard output from the selected game to Fanatec hardware.
+Prevents conflicts with the FanaLab software.</system:String>
+<system:String x:Key="HintSetToDefault" xml:space="preserve">The selected profile will be automatically loaded with the currently selected game on the left.</system:String>
+<system:String x:Key="HintProfileDelete" xml:space="preserve">The currently selected profile in the list below will be deleted.</system:String>
+<system:String x:Key="HintTuningMenu" xml:space="preserve">Only the selected settings will be saved or loaded.
+This way you can select to only load or save a specific part of a preset without the rest.</system:String>
+<system:String x:Key="HintVibration" xml:space="preserve">Only the selected settings will be saved or loaded.
+This way you can select to only load or save a specific part of a preset without the rest.</system:String>
+<system:String x:Key="HintLED" xml:space="preserve">Only the selected settings will be saved or loaded.
+This way you can select to only load or save a specific part of a preset without the rest.</system:String>
+<system:String x:Key="HintDynamicFFB" xml:space="preserve">Only the selected settings will be saved or loaded.
+This way you can select to only load or save a specific part of a preset without the rest.</system:String>
+<system:String x:Key="HintSave" xml:space="preserve">Creates a save file including the current settings.
+Check the boxes above to select which settings you want to include.
+Only the settings selected above will be saved!</system:String>
+<system:String x:Key="HintLoad" xml:space="preserve">Loads the selected save file.
+Look at the overview on the right to see which settings are included.
+Check the boxes above to select which settings you want to load from the selected preset.
+Only the settings selected above will be loaded!</system:String>
+<system:String x:Key="HintImport" xml:space="preserve">You can import settings from a folder.
+File type ending is ".pws"</system:String>
+<system:String x:Key="HintExport" xml:space="preserve">You can export settings to a folder.
+File type ending is ".pws"</system:String>
+<system:String x:Key="HintChooseGame" xml:space="preserve">Choose which game to modify profile</system:String>
+</ResourceDictionary>
