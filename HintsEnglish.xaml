@@ -198,5 +198,5 @@ Only the settings selected above will be loaded!</system:String>
 File type ending is ".pws"</system:String>
 <system:String x:Key="HintExport" xml:space="preserve">You can export settings to a folder.
 File type ending is ".pws"</system:String>
-<system:String x:Key="HintChooseGame" xml:space="preserve">Choose which game to modify profile</system:String>
+<system:String x:Key="HintChooseGame" xml:space="preserve">选择一个需要修改配置的游戏</system:String>
 </ResourceDictionary>
